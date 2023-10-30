@@ -1,5 +1,7 @@
 # 64030161 Rachata Supanurak
 
+### [Challenge](./challenge.md)
+
 ## การทดลอง
 
 เมื่อ เปลี่ยน sleep(1); เป็น usleep(500000); โดยใช้โค้ดไฟกระพริบจากใบงานที่ 1 จะทำให้ไฟกระพริบ ติด - ดับ สลับกันเร็จขึ้นโดยจะเปลี่ยนจาก ติดหรือดับค้างไวh 1 วินาทีเป็น 0.5 วินาที
@@ -182,4 +184,4 @@ void app_main(void)
         }
     }
 ```
-[Challenge](./challenge.md)
+## [Challenge](./challenge.md)
