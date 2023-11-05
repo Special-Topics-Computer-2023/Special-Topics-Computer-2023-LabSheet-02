@@ -17,6 +17,8 @@
 15    -------0
 16    ------0-
 ...
+
+
 code วิ่งไป กลับ
 
 #include <stdio.h>
@@ -128,6 +130,7 @@ void app_main(void)
 16    ------00
 
 code ยืด หด
+
     while (true)
     {
         gpio_set_level(23, 1);
@@ -172,7 +175,9 @@ code ยืด หด
  6    --0--0--
  7    ---00---
  8    --0--0--
+ 
  code ขยายออก
+ 
      while (true)
     {
         gpio_set_level(21, 1);
@@ -212,7 +217,10 @@ code ยืด หด
         gpio_set_level(19, 0);
         usleep(OFF_time);
     }
+
+    
     ยุบเข้า
+    
      1    0------0
  2    -0----0-
  3    --0--0--
@@ -221,7 +229,9 @@ code ยืด หด
  6    -0----0-
  7    0------0
  8    -0----0-
+ 
  code ไฟยุบเข้า
+ 
      while (true)
     {
         gpio_set_level(23, 1);
