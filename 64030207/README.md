@@ -182,4 +182,3 @@ void app_main(void)
         }
     }
 ```
-## [Challenge](./challenge.md)
