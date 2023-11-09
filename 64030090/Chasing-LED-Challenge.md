@@ -26,7 +26,42 @@
 16    ------0-
 ...
 ```
+```
+#include <stdio.h>
+#include <stdbool.h>
+#include <unistd.h>
+#include "driver/gpio.h"
 
+void app_main(void)
+{
+    int pins[] = {23, 22, 1, 3, 21, 19, 18, 5};
+    int numPins = sizeof(pins) / sizeof(pins[0]);
+
+    for (int i = 0; i < numPins; ++i)
+    {
+        gpio_reset_pin(pins[i]);
+        gpio_set_direction(pins[i], GPIO_MODE_OUTPUT);
+    }
+
+    while (true)
+    {
+        for (int i = 0; i < numPins; ++i)
+        {
+            gpio_set_level(pins[i], 1);
+            usleep(500000); // Sleep for 0.5 seconds
+            gpio_set_level(pins[i], 0);
+        }
+
+        for (int i = numPins - 2; i > 0; --i)
+        {
+            gpio_set_level(pins[i], 1);
+            usleep(500000); // Sleep for 0.5 seconds
+            gpio_set_level(pins[i], 0);
+        }
+    }
+}
+
+```
 *ยืด-หด*
 ```
  1    -------0
@@ -46,7 +81,58 @@
 15    -------0
 16    ------00
 ```
+```
+#include <stdio.h>
+#include <stdbool.h>
+#include <unistd.h>
+#include "driver/gpio.h"
 
+void app_main(void)
+{
+    int pins[] = {23, 22, 1, 3, 21, 19, 18, 5};
+    int numPins = sizeof(pins) / sizeof(pins[0]);
+
+    for (int i = 0; i < numPins; ++i)
+    {
+        gpio_reset_pin(pins[i]);
+        gpio_set_direction(pins[i], GPIO_MODE_OUTPUT);
+    }
+
+    while (true)
+    {
+        for (int i = 0; i < numPins; ++i)
+        {
+            for (int j = 0; j <= i; ++j)
+            {
+                gpio_set_level(pins[j], 1);
+            }
+
+            usleep(500000); // Sleep for 0.5 seconds
+
+            for (int j = 0; j <= i; ++j)
+            {
+                gpio_set_level(pins[j], 0);
+            }
+        }
+
+        for (int i = numPins - 2; i > 0; --i)
+        {
+            for (int j = 0; j <= i; ++j)
+            {
+                gpio_set_level(pins[j], 1);
+            }
+
+            usleep(500000); // Sleep for 0.5 seconds
+
+            for (int j = 0; j <= i; ++j)
+            {
+                gpio_set_level(pins[j], 0);
+            }
+        }
+    }
+}
+
+```
 *ขยายออก*
 ```
  1    ---00---
@@ -58,7 +144,49 @@
  7    ---00---
  8    --0--0--
 ```
+```
+#include <stdio.h>
+#include <stdbool.h>
+#include <unistd.h>
+#include "driver/gpio.h"
 
+void app_main(void)
+{
+    int pins[] = {23, 22, 1, 3, 21, 19, 18, 5};
+    int numPins = sizeof(pins) / sizeof(pins[0]);
+
+    for (int i = 0; i < numPins; ++i)
+    {
+        gpio_reset_pin(pins[i]);
+        gpio_set_direction(pins[i], GPIO_MODE_OUTPUT);
+    }
+
+    while (true)
+    {
+        for (int i = 0; i < numPins; ++i)
+        {
+            gpio_set_level(pins[i], 0);
+        }
+
+        gpio_set_level(pins[0], 1);
+        gpio_set_level(pins[4], 1);
+
+        usleep(500000); // Sleep for 0.5 seconds
+
+        for (int i = 1; i <= 3; ++i)
+        {
+            gpio_set_level(pins[i], 1);
+            gpio_set_level(pins[8 - i], 1);
+
+            usleep(500000); // Sleep for 0.5 seconds
+
+            gpio_set_level(pins[i], 0);
+            gpio_set_level(pins[8 - i], 0);
+        }
+    }
+}
+
+```
 
 *ยุบเข้า*
 ```
@@ -71,7 +199,49 @@
  7    0------0
  8    -0----0-
 ```
+```
+#include <stdio.h>
+#include <stdbool.h>
+#include <unistd.h>
+#include "driver/gpio.h"
 
+void app_main(void)
+{
+    int pins[] = {23, 22, 1, 3, 21, 19, 18, 5};
+    int numPins = sizeof(pins) / sizeof(pins[0]);
+
+    for (int i = 0; i < numPins; ++i)
+    {
+        gpio_reset_pin(pins[i]);
+        gpio_set_direction(pins[i], GPIO_MODE_OUTPUT);
+    }
+
+    while (true)
+    {
+        for (int i = 0; i < numPins; ++i)
+        {
+            gpio_set_level(pins[i], 0);
+        }
+
+        gpio_set_level(pins[3], 1);
+        gpio_set_level(pins[4], 1);
+
+        usleep(500000); // Sleep for 0.5 seconds
+
+        for (int i = 2; i <= 5; ++i)
+        {
+            gpio_set_level(pins[i], 1);
+            gpio_set_level(pins[8 - i], 1);
+
+            usleep(500000); // Sleep for 0.5 seconds
+
+            gpio_set_level(pins[i], 0);
+            gpio_set_level(pins[8 - i], 0);
+        }
+    }
+}
+
+```
 *แบบอื่น ๆ ตามจินตนาการ*
 
 ---
