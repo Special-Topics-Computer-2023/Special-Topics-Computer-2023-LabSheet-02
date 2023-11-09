@@ -1,3 +1,4 @@
+#### 64030048 ณัฏฐณิชา เหลาเพ็ชร
 # IoT-ESP32-LabSheet-02
 # โปรแกรมไฟวิ่ง 8 ดวง
 ## [(กลับไปหน้าที่แล้ว)](./Chasing-LED-V3.md
@@ -27,6 +28,7 @@
 16    ------0-
 ...
 ```
+![ภาพ](https://github.com/kammam19/Special-Topics-Computer-2023-LabSheet-02/assets/112167732/5d98b44c-2a06-4381-8045-24582921342a)
 
 *ยืด-หด*
 ```
@@ -47,6 +49,7 @@
 15    -------0
 16    ------00
 ```
+![ภาพ](https://github.com/kammam19/Special-Topics-Computer-2023-LabSheet-02/assets/112167732/720498d9-08d7-48d8-bbcf-c41fa0266fe2)
 
 *ขยายออก*
 ```
@@ -59,6 +62,7 @@
  7    ---00---
  8    --0--0--
 ```
+![ภาพ](https://github.com/kammam19/Special-Topics-Computer-2023-LabSheet-02/assets/112167732/e205069f-b6b8-4d59-99e5-281e69ef0c46)
 
 
 *ยุบเข้า*
@@ -72,6 +76,7 @@
  7    0------0
  8    -0----0-
 ```
+![ภาพ](https://github.com/kammam19/Special-Topics-Computer-2023-LabSheet-02/assets/112167732/e393b7cf-9577-4aa4-8536-4bae2e5d787d)
 
 *แบบอื่น ๆ ตามจินตนาการ*
 
@@ -86,7 +91,8 @@
 - เมื่อทำงานเสร็จ ให้ส่งทาง  pull request 
 
 รูปแบบ folder ของ repo ที่สามารถทำ pull request
-
+## คลิปในยูทูป (64030048 ณัฏฐณิชา เหลาเพ็ชร)
+## https://youtube.com/shorts/X2uNNxi2qQE?si=PxDmsTIqpsqX5ES9
 ```
     [Lab-repo-name]
     +-[6XXXXXXX]             (สร้าง folder ด้วยรหัสนักศึกษา เพื่อไม่ให้ไฟล์ทับกับเพื่อน)
