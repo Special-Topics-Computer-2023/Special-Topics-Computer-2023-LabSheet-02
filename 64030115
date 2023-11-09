@@ -1,0 +1,10 @@
+อัพโหลดโปรแกามนี้ลงบอร์ดจะทำให้ไปวิ่งจากดวงซ้ายสุดไปขวาสุดของบอร์ด โดนมีเวลาดีเลย์ 1 วินาที
+https://scontent.fbkk29-7.fna.fbcdn.net/v/t1.15752-9/396615252_359555979940309_811231588436618765_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=8cd0a2&_nc_eui2=AeHTW26PhKPx1ez5CsvCSx8MUbNAwQkjOslRs0DBCSM6yTBGpbB2QCxwR08hQ3Ublot-OEEm_Y2-2ld__6h14fjg&_nc_ohc=ZdumPygQ_HAAX9fmAaT&_nc_ht=scontent.fbkk29-7.fna&oh=03_AdReHj__6uElgQIohJveInszPr9SPod3w_9V_6ooo1dxLg&oe=65741044
+https://scontent.fbkk29-5.fna.fbcdn.net/v/t1.15752-9/398450013_1006870727204104_6787140579254020229_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=8cd0a2&_nc_eui2=AeG60iONM7CzD_Cgl2UKopSqJvdJ2CYvgdQm90nYJi-B1Jq5lmfWKmIZhX3IJidXTe6lSZSeMrIMV9t_zjytGeTP&_nc_ohc=OvYUgY9vJQcAX9ELF1V&_nc_ht=scontent.fbkk29-5.fna&oh=03_AdQH-DJvb2tRLSjiAeBVXi8ZDhdjdAyIjD0P7GIb11PuIg&oe=65740787
+
+
+ปรแกรมไฟวิ่ว 8 ดวงรุ่นที 2 จะได้ผลลัพธ์เหมือนกันกับรุ่นแรกแต่เราจะสามารถเปลี่ยนเวลาติด - ดับของไฟได้จากตัวแปร ON_time และ OFF_time ที่เก็บค่าเวลาไว้และถูกเรียกใช้ใน usleep
+https://scontent.fbkk29-7.fna.fbcdn.net/v/t1.15752-9/396615252_359555979940309_811231588436618765_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=8cd0a2&_nc_eui2=AeHTW26PhKPx1ez5CsvCSx8MUbNAwQkjOslRs0DBCSM6yTBGpbB2QCxwR08hQ3Ublot-OEEm_Y2-2ld__6h14fjg&_nc_ohc=ZdumPygQ_HAAX9fmAaT&_nc_ht=scontent.fbkk29-7.fna&oh=03_AdReHj__6uElgQIohJveInszPr9SPod3w_9V_6ooo1dxLg&oe=65741044
+
+โปรแกรมไฟวิ่งรุ่นที 3 จะเปลี่นการกำหนด direction การ reset pin และการ set level ของ pin ด้วย loop ทำให้โค้ดสั่นลงและอ่านง่ายึ้นและได้ผลเหมือนกันกับรุ่นที 1 และ 2
+https://scontent-ord5-2.xx.fbcdn.net/v/t1.15752-9/397994611_307526105487718_5434833906768135996_n.jpg?stp=dst-jpg_p206x206&_nc_cat=107&ccb=1-7&_nc_sid=510075&_nc_eui2=AeF3Lwb832fmpxPaWKC_r1-PX5icWaoBp2FfmJxZqgGnYShqq93tnmQuKtExiF3rw2Fi-vHTb8fVO44H33s4qzQ0&_nc_ohc=esNrAMmH2FAAX8do6nc&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent-ord5-2.xx&oh=03_AdTqbV4zdlJMNrwtMH8VuOfWS8O-YqeYlZOOIx-tToLPWw&oe=6574172D
