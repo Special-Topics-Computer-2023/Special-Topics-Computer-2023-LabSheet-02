@@ -105,6 +105,9 @@ unsigned int sleep(unsigned int seconds)
 4. Build และ Run โปรแกรม (อาจจะกด Run ในคราวเดียวก็ได้) 
 5. สังเกตุการกระพริบของหลอดไฟ
 6. ทดลองเปลี่ยนค่าตัวเลข _500000_ ใน `usleep(500000);` เป็นค่าอื่น ๆ  หรือกำหนดให้แต่ละที่มีค่าที่แตกต่างกัน
+![S__92454928_0](https://github.com/Suthera213/Special-Topics-Computer-2023-LabSheet-02/assets/115066359/c074a1be-2f95-4993-9d28-3cbfef1caff7)
+![S__92454926_0](https://github.com/Suthera213/Special-Topics-Computer-2023-LabSheet-02/assets/115066359/dd4b5235-441d-4422-aa0f-21cf0acf63a7)
+
 
 
 ## [3. วงจรไฟวิ่ง 8 ดวง (คลิกเพื่อเข้าสู่การทดลอง)](./chasing_led.md)
